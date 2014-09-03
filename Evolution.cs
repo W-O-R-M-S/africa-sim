@@ -131,7 +131,7 @@ namespace Evolve
                 if (damage > 0)
                 {
                    
-                    if(write)
+                    if (write)
                     { Console.WriteLine("" + org1Name + " hits " + org2Name + " for {0} ({1} -> {2})", damage, org2Health, org2Health - damage); }
                     org2Health -= damage;
                     totDamage += damage;
@@ -244,7 +244,7 @@ namespace Evolve
                 numOrgs /= 2;
                 goto Sort;
             }
-            Fight(orgs, false, 1, 2);
+            Fight(orgs, true, 1, 2);
         }
     }
 }
